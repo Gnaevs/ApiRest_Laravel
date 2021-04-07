@@ -15,8 +15,8 @@ class CreateProductosTable extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->string('prod_nom');
-            $table->string('prod_obs');
+            $table->string('prod_nom')->nullable();
+            $table->string('prod_obs')->nullable();
             $table->timestamps();
         });
     }
